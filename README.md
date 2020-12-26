@@ -67,4 +67,6 @@ sudo mysql -u root -p (ingresamos nuevamente como root)
 
 GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION; (cambiamos donde dice 'username' por el nombre de usuario de la base de datos y donde dice 'password' por la contraseña que se le colocara al usuario)
 
+exit
+
 está todo listo ahora podemos configurar nuestras páginas web en local con interfaz gráfica en la configuración de las bases de datos
