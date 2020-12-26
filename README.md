@@ -48,3 +48,39 @@ sudo apt install mariadb-server (instala mariadb server)
 
 
 sudo mysql_secure_installation
+
+(Se le preguntará si desea configurar el componente "VALIDATE PASSWORD" o no. Este componente permite a los usuarios configurar una contraseña segura para las credenciales de la base de datos. Si está habilitado, comprobará automáticamente la seguridad de la contraseña y obligará a los usuarios a establecer solo aquellas contraseñas que sean lo suficientemente seguras. Es seguro dejarlo desactivado . Sin embargo, debe utilizar una contraseña segura y única para las credenciales de la base de datos. Si no desea habilitar este componente, simplemente presione cualquier tecla para omitir la parte de validación de contraseña y continuar con el resto de los pasos.
+
+Ingrese "y" si desea configurar el componente VALIDATE PASSWORD:      )
+ingresamos la nueva contraseña y a lo demas le damos en si 
+
+
+ahora ejecutamos los siguientes comandos
+
+
+sudo mysql
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'Password'; (donde dice 'Password' se coloca la contraseña del usuario)
+
+FLUSH PRIVILEGES;
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+exit;
+
+
+sudo apt install phpmyadmin
+
+seleccionamos apache2 parandonos ensima de el y precionando la barra de espacio; 
+seleccionamos 'yes'; 
+colocamos la nueva contraseña
+
+
+sudo mysql -u root -p (ingrsamos nuevamente como root)
+
+GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION; (cambiamos donde dice 'username' por el nombre de usuario de la base de datos y donde dice 'password' por la contraseña que se le colocara al usuario)
+
+
+esta todo listo ahora podemos configuarar nuestras paginas web en local con interfaz grafica en la configuracion de las bases de datos
