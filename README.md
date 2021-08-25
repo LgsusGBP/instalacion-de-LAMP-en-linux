@@ -19,7 +19,7 @@ Escribir en la Consola los siguientes comandos.
 ```instala el sistema de php```
 >sudo apt-get install php 
 
-**```(si hay cortafuegos hacer lo siguiente nota solo funciona en plataformas de servidores)```**
+```**(si hay cortafuegos hacer lo siguiente nota solo funciona en plataformas de servidores)**```
 
 >sudo ufw app list
 
@@ -34,7 +34,7 @@ Escribir en la Consola los siguientes comandos.
 
 ``` Probar el servidor web Apache ``` 
 
-**``` Ahora, abra su navegador web y acceda a la página de prueba de Apache navegando a http: // localhost / o http: // IP-Address / . ``` **
+```** Ahora, abra su navegador web y acceda a la página de prueba de Apache navegando a http: // localhost / o http: // IP-Address / . **```
 
 ``` (seguimos con la instalación de paquetes) ```
 
@@ -49,8 +49,8 @@ Escribir en la Consola los siguientes comandos.
 
 ``` (Se le preguntará si desea configurar el componente "VALIDATE PASSWORD" o no. Este componente permite a los usuarios configurar una contraseña segura para las credenciales de la base de datos. Si está habilitado, comprobará automáticamente la seguridad de la contraseña y obligará a los usuarios a establecer solo aquellas contraseñas que sean lo suficientemente seguras. Es seguro dejarlo desactivado. Sin embargo, debe utilizar una contraseña segura y única para las credenciales de la base de datos. Si no desea habilitar este componente, simplemente presione cualquier tecla para omitir la parte de validación de contraseña y continuar con el resto de los pasos. ``` 
 
-**``` Ingrese "y" si desea configurar el componente VALIDATE PASSWORD: )```**
-**``` ingresamos la nueva contraseña y a lo demás le damos en sí``` **
+``` **Ingrese "y" si desea configurar el componente VALIDATE PASSWORD: )**```
+```** ingresamos la nueva contraseña y a lo demás le damos en sí**```
 
 ``` Ahora ejecutamos los siguientes comandos``` 
 
@@ -68,9 +68,9 @@ Escribir en la Consola los siguientes comandos.
 
 >sudo apt install phpmyadmin
 
-**``` Seleccionamos apache2 parándonos encima de él y presionando la barra de espacio;``` 
-``` seleccionamos 'yes';``` 
-``` colocamos la nueva contraseña``` **
+```** Seleccionamos apache2 parándonos encima de él y presionando la barra de espacio;**``` 
+``` **seleccionamos 'yes';**``` 
+``` **colocamos la nueva contraseña**```
 
 >sudo mysql -u root -p (ingresamos nuevamente como root)
 
@@ -78,5 +78,5 @@ Escribir en la Consola los siguientes comandos.
 
 >exit
 
-**``` las contraseñas de las bases de datos es: root y la contraseña es: root``` **
+```** las contraseñas de las bases de datos es: root y la contraseña es: root**```
 ``` está todo listo ahora podemos configurar nuestras páginas web en local con interfaz gráfica en la configuración de las bases de datos``` 
