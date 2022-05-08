@@ -66,6 +66,7 @@ Escribir en la Consola los siguientes comandos.
 >SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 >exit
+
 ```para recftificar la que tengamos la contraseña ingresamos de la diguiente forma:```
 
 >sudo mysql -u root -p
