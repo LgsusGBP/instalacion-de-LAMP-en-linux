@@ -67,8 +67,11 @@ Escribir en la Consola los siguientes comandos.
 
 >exit
 ```para recftificar la que tengamos la contraseña ingresamos de la diguiente forma:```
+
 >sudo mysql -u root -p
+
 ```Colocamos la contraseña```
+
 >sudo apt install phpmyadmin
 
 ```** Seleccionamos apache2 parándonos encima de él y presionando la barra de espacio;**``` 
