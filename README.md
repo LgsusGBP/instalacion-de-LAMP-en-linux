@@ -58,14 +58,17 @@ Escribir en la Consola los siguientes comandos.
 
 >SELECT user,authentication_string,plugin,host FROM mysql.user;
 
->ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'root';
+``` El comando que viene es para poder colocarle contraseña a my sql y asi poder acceder de manera segura. la variable "$root" la cambian por la contraseña que mejor les paresca```
+>ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '$root';
 
 >FLUSH PRIVILEGES;
 
->SELECT user,authentication_stringplugin,host FROM mysql.user;
+>SELECT user,authentication_string,plugin,host FROM mysql.user;
 
 >exit
-
+```para recftificar la que tengamos la contraseña ingresamos de la diguiente forma:```
+>sudo mysql -u root -p
+```Colocamos la contraseña```
 >sudo apt install phpmyadmin
 
 ```** Seleccionamos apache2 parándonos encima de él y presionando la barra de espacio;**``` 
