@@ -47,7 +47,7 @@ Escribir en la Consola los siguientes comandos.
 
 >sudo mysql_secure_installation
 
-``` (Se le preguntará si desea configurar el componente "VALIDATE PASSWORD" o no. Este componente permite a los usuarios configurar una contraseña segura para las credenciales de la base de datos. Si está habilitado, comprobará automáticamente la seguridad de la contraseña y obligará a los usuarios a establecer solo aquellas contraseñas que sean lo suficientemente seguras. Es seguro dejarlo desactivado. Sin embargo, debe utilizar una contraseña segura y única para las credenciales de la base de datos. Si no desea habilitar este componente, simplemente presione cualquier tecla para omitir la parte de validación de contraseña y continuar con el resto de los pasos. ``` 
+``` presionamos enter cuando nos pida una contraseña, y cuando nos pidesetiar una contraseña le damos que no y a todo lo demas tambien escribimos n y presionamos enter ``` 
 
 ``` **Ingrese "y" si desea configurar el componente VALIDATE PASSWORD: )**```
 ```** ingresamos la nueva contraseña y a lo demás le damos en sí**```
